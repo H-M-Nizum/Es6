@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>Fetch</title>
+</head>
+<body>
+    <div style="text-align: center; color: tomato; margin: 50px; border: 5px solid; padding: 20px;">
+        <h1 >Fetch API and display data in Browser console</h1>
+        <button style="padding: 10px 40px; background-color: tomato; color: white;" onclick="loadData()">Load data</button>
+    </div>
+
+    <div class="text-center text-danger">
+        <h1>Fetch API and display data in Tabular format</h1>
+        <button class="btn btn-success m-5" onclick="loadUser()">Display User Data</button>
+        <button class="btn btn-danger m-5" onclick="removeData()">Remove User Data</button>
+        <div class="container">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">name</th>
+                    <th scope="col">email</th>
+                    <th scope="col">phone</th>
+                    <th scope="col">website</th>
+                    <th scope="col">address</th>
+                    <th scope="col">company</th>
+                  </tr>
+                </thead>
+                <tbody id="table_body">
+                    <!-- data come from fetch.js file -->
+                  
+                </tbody>
+              </table>
+        </div>
+    </div>
+    <!-- GET, POST, PATCH, PUT, DELETE Method -->
+    <div class="container">
+        <div class="card text-center">
+            <div class="card-header">
+              CROD Operations
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">GET</h3>
+              <p class="card-text">This Section for Get method</p>
+              <a href="#" class="btn btn-primary" onclick="loadPost()">Apply Get Method</a>
+            </div>
+        </div>
+
+        <div class="card text-center">
+            <div class="card-header">
+              CROD Operations
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">POST</h3>
+              <p class="card-text">This Section for POST method</p>
+              <a href="#" class="btn btn-success" onclick="createApost()">Apply POST Method</a>
+            </div>
+        </div>
+
+        <div class="card text-center">
+            <div class="card-header">
+              CROD Operations
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">PATCH</h3>
+              <p class="card-text">This Section for PATCH method</p>
+              <a href="#" class="btn btn-warning" onclick="patchApost()">Apply PATCH Method</a>
+            </div>
+        </div>
+
+        <div class="card text-center">
+            <div class="card-header">
+              CROD Operations
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">PUT</h3>
+              <p class="card-text">This Section for PUT method</p>
+              <a href="#" class="btn btn-warning" onclick="putApost()">Apply PUT Method</a>
+            </div>
+        </div>
+
+        <div class="card text-center">
+            <div class="card-header">
+              CROD Operations
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">DELETE</h3>
+              <p class="card-text">This Section for DELETE method</p>
+              <a href="#" class="btn btn-danger" onclick="deleteApost()">Apply DELETE Method</a>
+            </div>
+        </div>
+    
+    </div>
+
+
+    <!-- js file -->
+    <script src="fetch.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
