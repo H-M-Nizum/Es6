@@ -8,11 +8,29 @@
     <title>Fetch</title>
 </head>
 <body>
+
+    <!------------------- Load API  ---------------------->
     <div style="text-align: center; color: tomato; margin: 50px; border: 5px solid; padding: 20px;">
         <h1 >Fetch API and display data in Browser console</h1>
         <button style="padding: 10px 40px; background-color: tomato; color: white;" onclick="loadData()">Load data</button>
     </div>
+    
+    <!------------------- Kanye Api Link : https://kanye.rest/  ------------------------->
+    <div class="container mt-5">
+        <div style="border: 25px solid;">
+            <div class="card">
+                <h5 class="card-header">Kanye API Message</h5>
+                <div class="card-body">
+                  <h5 class="card-title">Kanye "quote"</h5>
+                  <p id="kanye_quote" class="card-text">Data come from Kanye API</p>
+                  <br>
+                  <a href="#" class="btn btn-primary" onclick="loadApi()">Load Knaye API</a>
+                </div>
+              </div>
+        </div>
+    </div>
 
+    <!------------------------- Load and Disply API Data  -------------------------->
     <div class="text-center text-danger">
         <h1>Fetch API and display data in Tabular format</h1>
         <button class="btn btn-success m-5" onclick="loadUser()">Display User Data</button>
@@ -37,6 +55,8 @@
               </table>
         </div>
     </div>
+
+
     <!-- GET, POST, PATCH, PUT, DELETE Method -->
     <div class="container">
         <div class="card text-center">
@@ -97,8 +117,12 @@
     </div>
 
 
+
+
+
     <!-- js file -->
     <script src="fetch.js"></script>
+    <script src="kanye.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
