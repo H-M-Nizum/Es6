@@ -6,3 +6,12 @@ const loadApi = () => {
         datatag.innerText = `${data.quote}`
     })
 }
+
+const k = [
+    {v: 3},
+    {l:3}
+]
+const ff = (array) => {
+    console.log(array)
+}
+ff(k)

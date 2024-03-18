@@ -123,3 +123,11 @@ const values = [1,2,3,4,5]
 const totalsum = values.reduce((previous, current) => previous+current, 0)
 console.log(totalsum)     // 15
 
+
+
+const loadtask = () => {
+    fetch('https://track-corporate-assets.onrender.com/employees/?name=akash')
+    .then(res => res.json())
+    .then(data => console.log(data))
+}
+loadtask()
