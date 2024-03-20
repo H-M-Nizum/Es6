@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local storage</title>
+</head>
+<body>
+    
+    <div style="padding: 100px;">
+        <input id="input_field" type="text">
+        <br><br>
+        <button id="add">Add to local storage</button>
+        <br><br>
+        <button id="remove">Remove from local storage</button>
+        <br><br>
+        <button id="clear">Clear local storage</button>
+    </div>
+
+    <script>
+        
+        document.getElementById("add").addEventListener('click', function(){
+            const input_value = document.getElementById("input_field").value
+            localStorage.setItem('name', input_value)
+        })
+        document.getElementById("remove").addEventListener('click', function(){
+            localStorage.removeItem('name')
+            
+        })
+        document.getElementById("clear").addEventListener('click', function(){
+            localStorage.clear()
+            
+        })
+    </script>
+</body>
+</html>
